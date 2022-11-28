@@ -11,11 +11,18 @@
   }
 
   &__buttons {
-    padding-left: 280px;
+    padding-left: 339px;
+  }
+  &__button {
+    @include modules.window-button($window-tab-blue);
+  }
+  &__close-btn {
+    @include modules.window-button(rgb(246, 52, 23));
   }
 
   &__menu {
     display: flex;
+    background-color: white;
   }
 
   &__menu > p {

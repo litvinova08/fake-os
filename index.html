@@ -13,6 +13,7 @@
     <title>Fake OS</title>
   </head>
   <body>
+    <!-- background, toolbar & three icons -->
     <section class="background">
       <div class="background__notepad-icon">
         <img src="./images/notepad.png" alt="icon" />
@@ -30,7 +31,6 @@
       </div>
 
       <div class="toolbar">
-        <!-- Trigger/Open The Modal -->
         <div class="toolbar__start"></div>
         <div class="toolbar__middle-field"></div>
         <div class="toolbar__right-field">
@@ -43,7 +43,7 @@
       </div>
     </section>
 
-    <!-- The Modal -->
+    <!-- The Modal Menu that will appear when START button clicked, not displayed by default -->
     <section class="menu">
       <div class="user">
         <img class="user__image" src="./images/chess.jfif" alt="icon" />
@@ -150,13 +150,13 @@
       </div>
     </section>
 
+    <!-- Notepad program fake window, displayed when the user double clicks on Notepad icon on the desktop-->
     <section class="notepad">
       <div class="notepad__head">
         <p class="notepad__title">Untitled - Notepad</p>
         <span class="notepad__buttons">
-          <button>_</button>
-          <button>W</button>
-          <button class="notepad__close-btn">x</button>
+          <button class="notepad__button"></button>
+          <button class="notepad__close-btn"></button>
         </span>
       </div>
       <div class="notepad__menu">
@@ -167,17 +167,17 @@
         <p>Help</p>
       </div>
       <div class="notepad__input">
-        <textarea></textarea>
+        <textarea id="notepad__textarea"></textarea>
       </div>
     </section>
 
+    <!-- cmd fake window, displayed when the user double clicks on Notepad icon on the desktop -->
     <section class="cmd">
       <div class="cmd__head">
         <p class="cmd__title">C:\WINDOWS\system32\cmd.exe</p>
         <span class="cmd__buttons">
-          <button>_</button>
-          <button>W</button>
-          <button class="cmd__close-btn">x</button>
+          <button class="cmd__button"></button>
+          <button class="cmd__close-btn"></button>
         </span>
       </div>
       <div class="notepad__input">
@@ -185,14 +185,19 @@
       </div>
     </section>
 
+    <!-- Run fake window, displayed when the user double clicks on Notepad icon on the desktop -->
     <section class="run">
       <div class="run__head">
         <p class="run__title">Run</p>
         <span class="run__buttons">
-          <button>?</button>
-          <button class="run__close-btn">x</button>
+          <button class="run__button"></button>
+          <button class="run__close-btn"></button>
         </span>
       </div>
+      <p class="run__para">
+        Type the name of a program, folder, document, or Internet resource, and
+        Windows will open it for you.
+      </p>
       <div class="run__entry">
         <p>Open:</p>
         <input type="text" />

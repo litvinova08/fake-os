@@ -4,7 +4,7 @@
 .run {
   display: none;
   &--open {
-    @include modules.app-window-open(300px, 110px);
+    @include modules.app-window-open(300px, 135px);
   }
   flex-direction: column;
   align-items: center;
@@ -14,15 +14,35 @@
   }
 
   &__buttons {
-    padding-left: 220px;
+    padding-left: 225px;
+  }
+  &__button {
+    @include modules.window-button($window-tab-blue);
+  }
+  &__close-btn {
+    @include modules.window-button(rgb(246, 52, 23));
   }
 
+  &__para {
+    background-color: white;
+    padding-left: 88px;
+    padding-top: 10px;
+    font-size: 8px;
+  }
   &__entry {
+    background-color: white;
     display: flex;
     flex-direction: row;
-    margin-top: 10px;
+    justify-content: center;
+    padding-top: 10px;
+    > p {
+      padding-right: 5px;
+    }
   }
   &__actions {
-    margin-top: 10px;
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 70px;
   }
 }

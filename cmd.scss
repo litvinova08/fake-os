@@ -4,14 +4,23 @@
 .cmd {
   display: none;
   &--open {
-    @include modules.app-window-open(500px, 350px);
+    @include modules.app-window-open(500px, 331px);
   }
   &__head {
     @include modules.app-window-head;
   }
 
   &__buttons {
-    padding-left: 180px;
+    padding-left: 258px;
+  }
+  &__button {
+    @include modules.window-button($window-tab-blue);
+  }
+  &__close-btn {
+    @include modules.window-button(rgb(246, 52, 23));
+  }
+
+  &__input {
   }
 
   &__input > textarea {
