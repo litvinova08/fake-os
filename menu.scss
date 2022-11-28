@@ -1,0 +1,102 @@
+@use "./modules.scss";
+@import "./partials";
+
+//menu section
+.menu {
+  display: none;
+  width: 380px;
+  height: 480px;
+
+  &--open {
+    display: block;
+    position: absolute;
+    top: 30%;
+  }
+}
+
+//images sizes
+.white > div > img {
+  @include modules.image-size(35px, 35px);
+}
+.blue > div > img {
+  @include modules.image-size(30px, 30px);
+}
+
+//tope part with user name & icon
+.user {
+  display: flex;
+  width: 380px;
+  height: 60px;
+  align-items: center;
+  background-image: $blue-gradient;
+
+  &__image {
+    @include modules.image-size(48px, 48px);
+    border: 2px solid white;
+    border-radius: 3px;
+    margin-left: 4px;
+  }
+
+  &__para {
+    color: white;
+    margin-left: 4px;
+    font-weight: 500;
+    text-shadow: 1px 2px rgb(131, 130, 130);
+  }
+}
+
+//icons with programs names
+.apps {
+  display: flex;
+  font-weight: 200;
+  font-size: 11px;
+  width: 380px;
+
+  &__section--white {
+    width: 190px;
+    background-color: white;
+  }
+  &__section--white > div {
+    display: flex;
+    align-items: center;
+    margin-left: 4px;
+    height: 40px;
+  }
+  &__section--white > div > p {
+    padding-left: 4px;
+  }
+
+  &__section--blue {
+    width: 190px;
+    height: 370px;
+    background-color: #d3e5fb;
+  }
+  &__section--blue > div {
+    display: flex;
+    align-items: center;
+    padding-top: 2px;
+  }
+}
+
+#all-programs {
+  flex-direction: row-reverse;
+}
+#all-programs > img {
+  padding-right: 50px;
+}
+
+.power {
+  display: flex;
+  justify-content: flex-end;
+  height: 40px;
+  background-image: $blue-gradient;
+
+  &__button {
+    display: flex;
+    color: white;
+    align-items: center;
+    font-weight: 200;
+    font-size: 11px;
+    margin-right: 10px;
+  }
+}

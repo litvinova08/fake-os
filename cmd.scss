@@ -1,0 +1,20 @@
+@use "./modules.scss";
+@import "./partials";
+
+.cmd {
+  display: none;
+  &--open {
+    @include modules.app-window-open(500px, 350px);
+  }
+  &__head {
+    @include modules.app-window-head;
+  }
+
+  &__buttons {
+    padding-left: 180px;
+  }
+
+  &__input > textarea {
+    @include modules.app-window-inputArea;
+  }
+}

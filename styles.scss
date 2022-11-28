@@ -1,0 +1,13 @@
+@use "./background.scss";
+@use "./toolbar.scss";
+@use "./menu.scss";
+@use "./modules.scss";
+@use "./notepad.scss";
+@use "./cmd.scss";
+@use "./run.scss";
+@import "./partials";
+
+* {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}

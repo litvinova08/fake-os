@@ -1,0 +1,36 @@
+@import "./partials";
+
+.toolbar {
+  height: 36px;
+  display: flex;
+
+  &__start {
+    background-image: url("./images/start.png");
+    background-size: 110px;
+    width: 118px;
+  }
+
+  &__middle-field {
+    width: 91%;
+    background-image: $blue-gradient;
+  }
+
+  &__right-field {
+    display: flex;
+    width: 8%;
+    background-color: #0e9ef5;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 13px;
+    font-weight: 100;
+    > #time {
+      padding-bottom: 3px;
+    }
+
+    > img {
+      height: 20px;
+      width: 23px;
+    }
+  }
+}

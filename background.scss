@@ -1,0 +1,23 @@
+@use "./modules.scss";
+@import "./partials";
+
+.background {
+  background: url("./images/background");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column-reverse;
+
+  &__notepad-icon {
+    @include modules.background-position-icon(0);
+  }
+
+  &__cmd {
+    @include modules.background-position-icon(10%);
+  }
+
+  &__run {
+    @include modules.background-position-icon(20%);
+  }
+}

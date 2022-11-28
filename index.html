@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./fake-os-script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/d9334ca4eb.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Fake OS</title>
+  </head>
+  <body>
+    <section class="background">
+      <div class="background__notepad-icon">
+        <img src="./images/notepad.png" alt="icon" />
+        <p>Notepad</p>
+      </div>
+
+      <div class="background__cmd">
+        <img src="./images/command.png" alt="icon" />
+        <p>cdm</p>
+      </div>
+
+      <div class="background__run">
+        <img src="./images/run.png" alt="icon" />
+        <p>Run</p>
+      </div>
+
+      <div class="toolbar">
+        <!-- Trigger/Open The Modal -->
+        <div class="toolbar__start"></div>
+        <div class="toolbar__middle-field"></div>
+        <div class="toolbar__right-field">
+          <img src="./images/antivirus.png" alt="a" />
+          <img src="./images/nvidia.png" alt="v" />
+          <img src="./images/volume.png" alt="i" />
+
+          <div id="time"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Modal -->
+    <section class="menu">
+      <div class="user">
+        <img class="user__image" src="./images/chess.jfif" alt="icon" />
+        <p class="user__para">IEUSer</p>
+      </div>
+
+      <div class="apps">
+        <div class="white apps__section--white">
+          <div>
+            <img src="./images/explorer.png" alt="icon" />
+            <p>Internet, Internet Explorer</p>
+          </div>
+          <div>
+            <img src="./images/email.png" alt="icon" />
+            <p>Email, Outlook Express</p>
+          </div>
+          <div>
+            <img src="./images/command.png" alt="icon" />
+            <p>Command Prompt</p>
+          </div>
+          <div>
+            <img src="./images/msn.png" alt="icon" />
+            <p>MSN</p>
+          </div>
+          <div>
+            <img src="./images/player.png" alt="icon" />
+            <p>Windows Media Player</p>
+          </div>
+          <div>
+            <img src="./images/messenger.png" alt="icon" />
+            <p>Windows Messenger</p>
+          </div>
+          <div>
+            <img src="./images/notepad.png" alt="icon" />
+            <p>Notepad</p>
+          </div>
+          <div>
+            <img src="./images/tour.png" alt="icon" />
+            <p>Tour Windows XP</p>
+          </div>
+          <div id="all-programs">
+            <img src="./images/all.png" alt="icon" />
+            <p>All Programs</p>
+          </div>
+        </div>
+
+        <div class="blue apps__section--blue">
+          <div>
+            <img src="./images/my-docs.png" alt="icon" />
+            <p>My Documents</p>
+          </div>
+          <div>
+            <img src="./images/recent.png" alt="icon" />
+            <p>My Recent Documents</p>
+          </div>
+          <div>
+            <img src="./images/pictures.png" alt="icon" />
+            <p>My Pictures</p>
+          </div>
+          <div>
+            <img src="./images/music.png" alt="icon" />
+            <p>My Music</p>
+          </div>
+          <div>
+            <img src="./images/computer.png" alt="icon" />
+            <p>My Computer</p>
+          </div>
+          <div>
+            <img src="./images/control.png" alt="icon" />
+            <p>Control Panel</p>
+          </div>
+          <div>
+            <img src="./images/default.png" alt="icon" />
+            <p>Set Program Access and Defaults</p>
+          </div>
+          <div>
+            <img src="./images/printers.png" alt="icon" />
+            <p>Printers and Faxes</p>
+          </div>
+          <div>
+            <img src="./images/help.png" alt="icon" />
+            <p>Help and Support</p>
+          </div>
+          <div>
+            <img src="./images/search.png" alt="icon" />
+            <p>Search</p>
+          </div>
+          <div>
+            <img src="./images/run.png" alt="icon" />
+            <p>Run...</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="power">
+        <div class="power__button">
+          <img src="./images/off.png" alt="icon" />
+          <p>Log off</p>
+        </div>
+        <div class="power__button">
+          <img src="./images/turn.png" alt="icon" />
+          <p>Turn Off Computer</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="notepad">
+      <div class="notepad__head">
+        <p class="notepad__title">Untitled - Notepad</p>
+        <span class="notepad__buttons">
+          <button>_</button>
+          <button>W</button>
+          <button class="notepad__close-btn">x</button>
+        </span>
+      </div>
+      <div class="notepad__menu">
+        <p>File</p>
+        <p>Edit</p>
+        <p>Format</p>
+        <p>View</p>
+        <p>Help</p>
+      </div>
+      <div class="notepad__input">
+        <textarea></textarea>
+      </div>
+    </section>
+
+    <section class="cmd">
+      <div class="cmd__head">
+        <p class="cmd__title">C:\WINDOWS\system32\cmd.exe</p>
+        <span class="cmd__buttons">
+          <button>_</button>
+          <button>W</button>
+          <button class="cmd__close-btn">x</button>
+        </span>
+      </div>
+      <div class="notepad__input">
+        <textarea></textarea>
+      </div>
+    </section>
+
+    <section class="run">
+      <div class="run__head">
+        <p class="run__title">Run</p>
+        <span class="run__buttons">
+          <button>?</button>
+          <button class="run__close-btn">x</button>
+        </span>
+      </div>
+      <div class="run__entry">
+        <p>Open:</p>
+        <input type="text" />
+      </div>
+      <div class="run__actions">
+        <button>OK</button>
+        <button>Cancel</button>
+        <button>Browse...</button>
+      </div>
+    </section>
+  </body>
+</html>

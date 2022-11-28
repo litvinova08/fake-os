@@ -1,0 +1,276 @@
+.background {
+  background: url("./images/background");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.background__notepad-icon {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 100;
+  color: white;
+  width: 70px;
+  height: 70px;
+}
+.background__notepad-icon > img {
+  width: 50px;
+  height: 50px;
+}
+.background__cmd {
+  position: absolute;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 100;
+  color: white;
+  width: 70px;
+  height: 70px;
+}
+.background__cmd > img {
+  width: 50px;
+  height: 50px;
+}
+.background__run {
+  position: absolute;
+  top: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 100;
+  color: white;
+  width: 70px;
+  height: 70px;
+}
+.background__run > img {
+  width: 50px;
+  height: 50px;
+}
+
+.toolbar {
+  height: 36px;
+  display: flex;
+}
+.toolbar__start {
+  background-image: url("./images/start.png");
+  background-size: 110px;
+  width: 118px;
+}
+.toolbar__middle-field {
+  width: 91%;
+  background-image: linear-gradient(#1967cb, #4a8ee3);
+}
+.toolbar__right-field {
+  display: flex;
+  width: 8%;
+  background-color: #0e9ef5;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 13px;
+  font-weight: 100;
+}
+.toolbar__right-field > #time {
+  padding-bottom: 3px;
+}
+.toolbar__right-field > img {
+  height: 20px;
+  width: 23px;
+}
+
+.menu {
+  display: none;
+  width: 380px;
+  height: 480px;
+}
+.menu--open {
+  display: block;
+  position: absolute;
+  top: 30%;
+}
+
+.white > div > img {
+  width: 35px;
+  height: 35px;
+}
+
+.blue > div > img {
+  width: 30px;
+  height: 30px;
+}
+
+.user {
+  display: flex;
+  width: 380px;
+  height: 60px;
+  align-items: center;
+  background-image: linear-gradient(#1967cb, #4a8ee3);
+}
+.user__image {
+  width: 48px;
+  height: 48px;
+  border: 2px solid white;
+  border-radius: 3px;
+  margin-left: 4px;
+}
+.user__para {
+  color: white;
+  margin-left: 4px;
+  font-weight: 500;
+  text-shadow: 1px 2px rgb(131, 130, 130);
+}
+
+.apps {
+  display: flex;
+  font-weight: 200;
+  font-size: 11px;
+  width: 380px;
+}
+.apps__section--white {
+  width: 190px;
+  background-color: white;
+}
+.apps__section--white > div {
+  display: flex;
+  align-items: center;
+  margin-left: 4px;
+  height: 40px;
+}
+.apps__section--white > div > p {
+  padding-left: 4px;
+}
+.apps__section--blue {
+  width: 190px;
+  height: 370px;
+  background-color: #d3e5fb;
+}
+.apps__section--blue > div {
+  display: flex;
+  align-items: center;
+  padding-top: 2px;
+}
+
+#all-programs {
+  flex-direction: row-reverse;
+}
+
+#all-programs > img {
+  padding-right: 50px;
+}
+
+.power {
+  display: flex;
+  justify-content: flex-end;
+  height: 40px;
+  background-image: linear-gradient(#1967cb, #4a8ee3);
+}
+.power__button {
+  display: flex;
+  color: white;
+  align-items: center;
+  font-weight: 200;
+  font-size: 11px;
+  margin-right: 10px;
+}
+
+.notepad {
+  display: none;
+}
+.notepad--open {
+  border: 2px solid black;
+  position: absolute;
+  left: 30%;
+  top: 20%;
+  display: block;
+  width: 500px;
+  height: 350px;
+}
+.notepad__head {
+  background-image: linear-gradient(#1967cb, #4a8ee3);
+  display: flex;
+}
+.notepad__buttons {
+  padding-left: 280px;
+}
+.notepad__menu {
+  display: flex;
+}
+.notepad__menu > p {
+  margin: 0 4px;
+}
+.notepad__input > textarea {
+  width: 490px;
+  height: 294px;
+}
+
+.cmd {
+  display: none;
+}
+.cmd--open {
+  border: 2px solid black;
+  position: absolute;
+  left: 30%;
+  top: 20%;
+  display: block;
+  width: 500px;
+  height: 350px;
+}
+.cmd__head {
+  background-image: linear-gradient(#1967cb, #4a8ee3);
+  display: flex;
+}
+.cmd__buttons {
+  padding-left: 180px;
+}
+.cmd__input > textarea {
+  width: 490px;
+  height: 294px;
+}
+
+.run {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+.run--open {
+  border: 2px solid black;
+  position: absolute;
+  left: 30%;
+  top: 20%;
+  display: block;
+  width: 300px;
+  height: 110px;
+}
+.run__head {
+  background-image: linear-gradient(#1967cb, #4a8ee3);
+  display: flex;
+}
+.run__buttons {
+  padding-left: 220px;
+}
+.run__entry {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+.run__actions {
+  margin-top: 10px;
+}
+
+* {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*# sourceMappingURL=styles.css.map */

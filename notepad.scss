@@ -1,0 +1,28 @@
+@use "./modules.scss";
+@import "./partials";
+
+.notepad {
+  display: none;
+  &--open {
+    @include modules.app-window-open(500px, 350px);
+  }
+  &__head {
+    @include modules.app-window-head;
+  }
+
+  &__buttons {
+    padding-left: 280px;
+  }
+
+  &__menu {
+    display: flex;
+  }
+
+  &__menu > p {
+    margin: 0 4px;
+  }
+
+  &__input > textarea {
+    @include modules.app-window-inputArea;
+  }
+}
