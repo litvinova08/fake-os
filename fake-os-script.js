@@ -69,6 +69,7 @@ cmdCloseBtn.addEventListener("click", () => {
 const runIcon = document.querySelector(".background__run");
 const run = document.querySelector(".run");
 const runCloseBtn = document.querySelector(".run__close-btn");
+
 //when user clicks once, selects an icon
 runIcon.addEventListener("click", () => {
   runIcon.style.backgroundColor = "#68a2e0";
