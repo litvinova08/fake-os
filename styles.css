@@ -188,54 +188,109 @@
   display: none;
 }
 .notepad--open {
-  border: 2px solid black;
+  font-size: 13px;
   position: absolute;
   left: 30%;
   top: 20%;
   display: block;
   width: 500px;
   height: 350px;
+  border: 3px solid #1f47cb;
+  background-color: #1f47cb;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 7px;
 }
 .notepad__head {
-  background-image: linear-gradient(#1967cb, #4a8ee3);
   display: flex;
+  background-color: #1f47cb;
+  padding: 0px 5px 3px 3px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 7px;
+  color: white;
+  height: 22px;
 }
 .notepad__buttons {
-  padding-left: 280px;
+  padding-left: 339px;
+}
+.notepad__button {
+  background-color: #1f47cb;
+  color: white;
+  border: 2px solid white;
+  border-radius: 3px;
+  width: 20px;
+  height: 20px;
+}
+.notepad__close-btn {
+  background-color: rgb(246, 52, 23);
+  color: white;
+  border: 2px solid white;
+  border-radius: 3px;
+  width: 20px;
+  height: 20px;
 }
 .notepad__menu {
   display: flex;
+  background-color: white;
 }
 .notepad__menu > p {
   margin: 0 4px;
 }
 .notepad__input > textarea {
-  width: 490px;
-  height: 294px;
+  width: 496px;
+  height: 302px;
+  border: none;
+  outline: none;
 }
 
 .cmd {
   display: none;
 }
 .cmd--open {
-  border: 2px solid black;
+  font-size: 13px;
   position: absolute;
   left: 30%;
   top: 20%;
   display: block;
   width: 500px;
-  height: 350px;
+  height: 331px;
+  border: 3px solid #1f47cb;
+  background-color: #1f47cb;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 7px;
 }
 .cmd__head {
-  background-image: linear-gradient(#1967cb, #4a8ee3);
   display: flex;
+  background-color: #1f47cb;
+  padding: 0px 5px 3px 3px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 7px;
+  color: white;
+  height: 22px;
 }
 .cmd__buttons {
-  padding-left: 180px;
+  padding-left: 258px;
+}
+.cmd__button {
+  background-color: #1f47cb;
+  color: white;
+  border: 2px solid white;
+  border-radius: 3px;
+  width: 20px;
+  height: 20px;
+}
+.cmd__close-btn {
+  background-color: rgb(246, 52, 23);
+  color: white;
+  border: 2px solid white;
+  border-radius: 3px;
+  width: 20px;
+  height: 20px;
 }
 .cmd__input > textarea {
-  width: 490px;
-  height: 294px;
+  width: 496px;
+  height: 302px;
+  border: none;
+  outline: none;
 }
 
 .run {
@@ -244,28 +299,67 @@
   align-items: center;
 }
 .run--open {
-  border: 2px solid black;
+  font-size: 13px;
   position: absolute;
   left: 30%;
   top: 20%;
   display: block;
   width: 300px;
-  height: 110px;
+  height: 135px;
+  border: 3px solid #1f47cb;
+  background-color: #1f47cb;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 7px;
 }
 .run__head {
-  background-image: linear-gradient(#1967cb, #4a8ee3);
   display: flex;
+  background-color: #1f47cb;
+  padding: 0px 5px 3px 3px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 7px;
+  color: white;
+  height: 22px;
 }
 .run__buttons {
-  padding-left: 220px;
+  padding-left: 225px;
+}
+.run__button {
+  background-color: #1f47cb;
+  color: white;
+  border: 2px solid white;
+  border-radius: 3px;
+  width: 20px;
+  height: 20px;
+}
+.run__close-btn {
+  background-color: rgb(246, 52, 23);
+  color: white;
+  border: 2px solid white;
+  border-radius: 3px;
+  width: 20px;
+  height: 20px;
+}
+.run__para {
+  background-color: white;
+  padding-left: 88px;
+  padding-top: 10px;
+  font-size: 8px;
 }
 .run__entry {
+  background-color: white;
   display: flex;
   flex-direction: row;
-  margin-top: 10px;
+  justify-content: center;
+  padding-top: 10px;
+}
+.run__entry > p {
+  padding-right: 5px;
 }
 .run__actions {
-  margin-top: 10px;
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 70px;
 }
 
 * {

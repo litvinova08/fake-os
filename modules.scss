@@ -19,26 +19,47 @@
 }
 
 @mixin app-window-open($width, $height) {
-  border: 2px solid black;
+  font-size: 13px;
   position: absolute;
   left: 30%;
   top: 20%;
   display: block;
   width: $width;
   height: $height;
+  border: 3px solid $window-tab-blue;
+  background-color: $window-tab-blue;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 7px;
 }
 
 @mixin app-window-head {
-  background-image: $blue-gradient;
   display: flex;
+  background-color: $window-tab-blue;
+  padding: 0px 5px 3px 3px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 7px;
+
+  color: white;
+  height: 22px;
 }
 
 @mixin app-window-inputArea {
-  width: 490px;
-  height: 294px;
+  width: 496px;
+  height: 302px;
+  border: none;
+  outline: none;
 }
 
 @mixin image-size($width, $height) {
   width: $width;
   height: $height;
+}
+
+@mixin window-button($background-color) {
+  background-color: $background-color;
+  color: white;
+  border: 2px solid white;
+  border-radius: 3px;
+  width: 20px;
+  height: 20px;
 }
