@@ -17,3 +17,5 @@ Margarita Litvinova
 ## Project Status
 
 In progress
+
+![This is a project image](./assets/fake-os.png)
